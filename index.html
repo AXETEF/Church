@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Управление заказами</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Главный экран -->
+  <div id="main-screen">
+    <div class="left-column">
+      <div id="product-list">
+        <!-- Список товаров -->
+      </div>
+      <div class="buttons">
+        <button id="add-product">+</button>
+        <button id="menu-button">≡</button>
+        <button id="shift-button" class="shift-open">Открыть смену</button>
+      </div>
+    </div>
+    <div class="right-column">
+      <div id="order-list">
+        <!-- Список заказов -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Меню -->
+  <div id="menu-screen" class="hidden">
+    <h2>Меню</h2>
+    <ul>
+      <li><button id="go-to-checks">Чеки</button></li>
+      <li><button id="back-to-main">Назад</button></li>
+    </ul>
+  </div>
+
+  <!-- Чеки -->
+  <div id="checks-screen" class="hidden">
+    <h2>Чеки</h2>
+    <table id="checks-table">
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Товары</th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Строки чеков -->
+      </tbody>
+    </table>
+    <button id="back-to-main-from-checks">Назад</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
